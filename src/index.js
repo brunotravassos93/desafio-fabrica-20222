@@ -8,6 +8,7 @@ import Animals from "./routes/animals.page";
 import Navbar from "./components/navbar";
 import Gallery from "./components/gallery";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
