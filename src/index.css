@@ -158,3 +158,11 @@ p {
       max-width: 400px;
    }
 }
+
+@media (max-width < 450px){
+   .navbar a {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+   }
+}
