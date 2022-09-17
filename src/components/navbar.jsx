@@ -11,6 +11,9 @@ function Navbar() {
           <li>
             <Link to="/animals">Animals</Link>
           </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
         </ul>
       </nav>
       <div>

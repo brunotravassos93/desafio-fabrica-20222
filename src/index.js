@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/home.page";
 import Animals from "./routes/animals.page";
 import Navbar from "./components/navbar";
+import Gallery from "./components/gallery";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/animals",
         element: <Animals />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
       },
     ],
   },
