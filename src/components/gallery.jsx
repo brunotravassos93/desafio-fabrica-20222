@@ -20,13 +20,15 @@ function ShowAnimals() {
       {animals.map(animal => {
         return (
           <div className="container gallery">
-          <img id="animalsImg" src={animal.image_link} />
-          <h4>Name: {animal.name}</h4>
-          <p>Latin Name: {animal.latin_name}</p>
-          <p>Habitat: {animal.habitat}</p>
-          <p>Diet: {animal.diet}</p>
-          <p>Localização: {animal.geo_range}</p>
-        </div>
+            <img id="animalsImg" src={animal.image_link} />
+            <h4>Name: {animal.name}</h4>
+            <div className="description">
+              <p><strong>Latin Name:</strong> {animal.latin_name}</p>
+              <p><strong>Habitat:</strong> {animal.habitat}</p>
+              <p><strong>Diet:</strong> {animal.diet}</p>
+              <p><strong>Localization:</strong> {animal.geo_range}</p>
+            </div>
+          </div>
         )
       })}
     </ul>

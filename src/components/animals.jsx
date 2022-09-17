@@ -18,10 +18,10 @@ function ShowAnimals() {
     <div className="container">
       <img id="animalsImg" src={animals.image_link} />
       <h4>Name: {animals.name}</h4>
-      <p>Latin Name: {animals.latin_name}</p>
-      <p>Habitat: {animals.habitat}</p>
-      <p>Diet: {animals.diet}</p>
-      <p>Localização: {animals.geo_range}</p>
+      <p><strong>Latin Name:</strong> {animals.latin_name}</p>
+      <p><strong>Habitat:</strong> {animals.habitat}</p>
+      <p><strong>Diet:</strong> {animals.diet}</p>
+      <p><strong>Localization:</strong> {animals.geo_range}</p>
 
       <button type="button" className="btn"
       onClick={getAnimals}>
