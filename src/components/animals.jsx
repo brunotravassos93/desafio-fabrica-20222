@@ -16,16 +16,16 @@ function ShowAnimals() {
 
   return (
     <div className="container">
-      <img src={animals.image_link} />
-      <h3>{animals.name}</h3>
-      <p>{animals.latin_name}</p>
-      <p>{animals.habitat}</p>
-      <p>{animals.diet}</p>
-      <p>{animals.geo_range}</p>
+      <img id="animalsImg" src={animals.image_link} />
+      <h4>Name: {animals.name}</h4>
+      <p>Latin Name: {animals.latin_name}</p>
+      <p>Habitat: {animals.habitat}</p>
+      <p>Diet: {animals.diet}</p>
+      <p>Localização: {animals.geo_range}</p>
 
       <button type="button" className="btn"
       onClick={getAnimals}>
-        Get Another Fact
+        Get Another Animal
       </button>
     </div>
   );

@@ -1,29 +1,11 @@
-import React, { useEffect, useState } from "react";
-
-function ChuckNorris() {
-
-  const [facts, setFacts] = useState("facts here");
-
-  useEffect(() => {
-    getFacts();
-  }, []);
-
-  const getFacts = async () => {
-    const response = await fetch('https://api.chucknorris.io/jokes/random');
-    const data = await response.json();
-    setFacts(data.value);
-}
-
+function Home() {
   return (
     <div className="container">
-      <h1>Chuck Norris Facts</h1>
-      <p className="facts joke">{facts}</p>
-      <button type="button" className="btn"
-      onClick={getFacts}>
-        Get Another Fact
-      </button>
+      <h1>Bem-Vindos ao ZooCode</h1>
+      <h3>Aqui você encontrará informações e fotos de diversos animais que estão esperando a sua visita!</h3>
+      <img id="bg" src="https://wallpaperaccess.com/full/1862824.png"/>
     </div>
   );
-};
+}
 
-export default ChuckNorris;
+export default Home;

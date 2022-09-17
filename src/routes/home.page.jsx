@@ -1,11 +1,11 @@
-import ChuckNorris from "../components/home";
+import Home from "../components/home";
 
-const ChuckNorrisPage = () => {
+const HomePage = () => {
   return (
     <main>
-      <ChuckNorris />
+      <Home />
     </main>
   );
 };
 
-export default ChuckNorrisPage;
+export default HomePage;
